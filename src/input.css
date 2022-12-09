@@ -7,6 +7,19 @@ body {
   scroll-behavior: smooth;
 }
 
+.animate-spin {
+  animation: spin 1s linear infinite;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
 .navbar-fixed {
   @apply fixed z-[9999] bg-white bg-opacity-80;
   backdrop-filter: blur(5px);
