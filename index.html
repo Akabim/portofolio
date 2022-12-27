@@ -70,11 +70,10 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Halo Semua 👋, Saya <span class="block font-bold text-dark text-4xl mt-3 lg:text-5xl dark:text-white">Abimanyu Putra</span></h1>
-
-            <h2 class="font-medium text-secondary text-lg mt-5 mb-5 lg:text-2xl"><span class="text-dark dark:text-white">Web Designer </span>& Developer</h2>
+            <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Halo Semua 👋, Saya <span class="block font-bold text-black text-4xl mt-3 lg:text-5xl dark:text-white">Abimanyu Putra</span></h1>
+            <div class="type"></div>
+            <h2 class="font-medium text-secondary text-lg mt-5 mb-5 lg:text-2xl">Website <span class="auto-type text-dark dark:text-white"></span></h2>
             <p class="font-medium text-secondary mb-10 leading-relaxed">Pria yang hebat, adalah pria yang bekerja keras.</p>
-
             <a
               href="https://api.whatsapp.com/send/?phone=6282139796381&text&type=phone_number&app_absent=0"
               target="_blank"
@@ -289,7 +288,15 @@
       </div>
     </footer>
     <!-- End -->
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Designer", "Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
     <script src="dist/js/script.js"></script>
   </body>
 </html>
