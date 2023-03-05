@@ -7,6 +7,7 @@
     <title>Portofolio | Abimanyu</title>
     <link rel="stylesheet" href="dist/css/final.css" />
     <link rel="icon" href="./dist/img/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script>
       if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
         document.documentElement.classList.add("dark");
@@ -115,7 +116,8 @@
               Im a hard working and fast learner person who likes to create and explore everything about website development. I also have interest to UI/UX designing. I will delivering quality work.
             </p>
             <a
-              href="./dist/file/Abimanyu Putra - CV.pdf" download="Abimanyu Putra - CV.pdf"
+              href="./dist/file/Abimanyu Putra - CV.pdf"
+              download="Abimanyu Putra - CV.pdf"
               target="_blank"
               class="text-base font-semibold text-white bg-primary py-3 px-6 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
               >Download CV
@@ -200,46 +202,63 @@
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-primary text-lg mb-2">Portfolio</h4>
             <h2 class="font-bold text-dark text-3xl mb-4 dark:text-white">My Recent Project</h2>
-            <p class="font-medium text-medium text-secondary">Here's some of my recent project i've been working in 2022.</p>
+            <p class="font-medium text-medium text-secondary">Here's some of my recent project i've been working in 2022. <span class="text-primary"> Swipe for more!</span></p>
           </div>
         </div>
 
         <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
-              <a href="https://www.figma.com/proto/r6feyGvm7US8P2oShVRztv/Tindhak?node-id=0%3A1" target="_blank"><img src="dist/img/portofolio/1.png" alt="Tindhak" width="600px" height="314px" loading="lazy" /></a>
+          <!-- Slider main container -->
+          <div class="swiper mx-auto">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper mx-auto">
+              <!-- Slides -->
+              <div class="swiper-slide justify-center items-center mx-auto">
+                <div class="mb-12 p-4 md:w-1/2 mx-auto">
+                  <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
+                    <a href="https://www.figma.com/proto/r6feyGvm7US8P2oShVRztv/Tindhak?node-id=0%3A1" target="_blank"><img src="dist/img/portofolio/1.png" alt="Tindhak" width="600px" height="314px" loading="lazy" /></a>
+                  </div>
+                  <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">Nandur - Aplikasi Penyedia Segala Jenis Tanaman Yang Bisa Kamu Rawat</h3>
+                  <p class="font-medium text-base text-secondary">Nandur merupakan tampilan website untuk landing page aplikasi penyedia jasa penjual tanaman.</p>
+                </div>
+              </div>
+              <div class="swiper-slide justify-center items-center">
+                <div class="mb-12 p-4 md:w-1/2 mx-auto">
+                  <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
+                    <a href="https://www.figma.com/file/QG9N6zRKi95sReLMw15VP2/Untitled?t=D1bOjWvHnP6DP6kK-6" target="_blank"><img src="dist/img/portofolio/4.png" alt="Tindhak" width="600px" height="314px" loading="lazy" /></a>
+                  </div>
+                  <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">Tindhak - Aplikasi Penyedia Segala Jasa Tiket Liburan Terbaik</h3>
+                  <p class="font-medium text-base text-secondary">Tindhak merupakan tampilan website untuk landing page aplikasi penyedia jasa pembelian tiket liburan.</p>
+                </div>
+              </div>
+              <div class="swiper-slide justify-center items-center">
+                <div class="mb-12 p-4 md:w-1/2 mx-auto">
+                  <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
+                    <a href="https://www.figma.com/file/lKit0YxMwvnU9YZSdanAbW/Techfest?node-id=0%3A1&t=19IV8A6FXsxDn6rs-1" target="_blank"><img src="dist/img/portofolio/2.png" alt="JasMerah" width="w-full" loading="lazy" /></a>
+                  </div>
+                  <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">JasMerah - Kenali Pahlawan Di Indonesia</h3>
+                  <p class="font-medium text-base text-secondary">JasMerah merupakan prototype dari website untuk menampilkan biodata dari pahlawan Indonesia</p>
+                </div>
+              </div>
+              <div class="swiper-slide justify-center items-center">
+                <div class="mb-12 p-4 md:w-1/2 mx-auto">
+                  <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
+                    <a href="https://www.figma.com/file/2qy2t12PmncO7wPCoIC461/Omongin?node-id=0%3A1&t=vhQWgkv0Fsu5YXwg-1" target="_blank"><img src="dist/img/portofolio/3.png" alt="Omogin" width="w-full" loading="lazy" /></a>
+                  </div>
+                  <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">Omongin - Konsultasi Masalahmu Kapan Saja, Dimana saja</h3>
+                  <p class="font-medium text-base text-secondary">Omongin merupakan prototype website untuk melakukan Konsultasi dengan mentor mentor professional.</p>
+                </div>
+              </div>
+              <div class="swiper-slide justify-center items-center">
+                <div class="mb-12 p-4 md:w-1/2 mx-auto">
+                  <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
+                    <a href="https://www.figma.com/file/kUDql729XxnAcs0qYhQt9K/shironime-2.0?node-id=0%3A1&t=6iFJzzakFGQTunqQ-1" target="_blank"><img src="dist/img/portofolio/5.png" alt="JasMerah" width="w-full" loading="lazy" /></a>
+                  </div>
+                  <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">Shironime - Tonton Anime Kesukaanmu</h3>
+                  <p class="font-medium text-base text-secondary">Shironime merupakan design dari dashboard website untuk Anime terbaik.</p>
+                </div>
+              </div>
             </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">Nandur - Aplikasi Penyedia Segala Jenis Tanaman Yang Bisa Kamu Rawat</h3>
-            <p class="font-medium text-base text-secondary">Nandur merupakan tampilan website untuk landing page aplikasi penyedia jasa penjual tanaman.</p>
-          </div>
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
-              <a href="https://www.figma.com/file/QG9N6zRKi95sReLMw15VP2/Untitled?t=D1bOjWvHnP6DP6kK-6" target="_blank"><img src="dist/img/portofolio/4.png" alt="Tindhak" width="600px" height="314px" loading="lazy" /></a>
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">Tindhak - Aplikasi Penyedia Segala Jasa Tiket Liburan Terbaik</h3>
-            <p class="font-medium text-base text-secondary">Tindhak merupakan tampilan website untuk landing page aplikasi penyedia jasa pembelian tiket liburan.</p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
-              <a href="https://www.figma.com/file/lKit0YxMwvnU9YZSdanAbW/Techfest?node-id=0%3A1&t=19IV8A6FXsxDn6rs-1" target="_blank"><img src="dist/img/portofolio/2.png" alt="JasMerah" width="w-full" loading="lazy" /></a>
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">JasMerah - Kenali Pahlawan Di Indonesia</h3>
-            <p class="font-medium text-base text-secondary">JasMerah merupakan prototype dari website untuk menampilkan biodata dari pahlawan Indonesia</p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
-              <a href="https://www.figma.com/file/2qy2t12PmncO7wPCoIC461/Omongin?node-id=0%3A1&t=vhQWgkv0Fsu5YXwg-1" target="_blank"><img src="dist/img/portofolio/3.png" alt="Omogin" width="w-full" loading="lazy" /></a>
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">Omongin - Konsultasi Masalahmu Kapan Saja, Dimana saja</h3>
-            <p class="font-medium text-base text-secondary">Omongin merupakan prototype website untuk melakukan Konsultasi dengan mentor mentor professional.</p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden hover:scale-110 transition duration-300 ease-in-out">
-              <a href="https://www.figma.com/file/kUDql729XxnAcs0qYhQt9K/shironime-2.0?node-id=0%3A1&t=6iFJzzakFGQTunqQ-1" target="_blank"><img src="dist/img/portofolio/5.png" alt="JasMerah" width="w-full" loading="lazy" /></a>
-            </div>
-            <h3 class="font-semibold text-dark text-xl mt-5 mb-3 dark:text-white">Shironime - Tonton Anime Kesukaanmu</h3>
-            <p class="font-medium text-base text-secondary">Shironime merupakan design dari dashboard website untuk Anime terbaik.</p>
+            <!-- If we need navigation buttons -->
           </div>
         </div>
       </div>
@@ -332,11 +351,7 @@
         <div class="w-full pt-10 border-t border-slate-700">
           <div class="flex items-center justify-center mb-5">
             <!-- Instagram -->
-            <a
-              href="https://www.instagram.com/abimwokeuplikethis/"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-            >
+            <a href="https://www.instagram.com/itsbim.pad/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Instagram</title>
                 <path
@@ -369,5 +384,17 @@
       });
     </script>
     <script src="dist/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        speed: 300,
+        autoplay: {
+          delay: 1000,
+        },
+      });
+    </script>
   </body>
 </html>
